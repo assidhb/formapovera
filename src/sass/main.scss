@@ -1,0 +1,42 @@
+@import "reset";
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  width: 90%;
+  max-width: 65ch;
+  margin-inline: auto;
+}
+.grid {
+  display: grid;
+}
+header {
+  width: 100%;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main {
+  margin: 0 auto;
+  max-width: 80ch;
+}
+footer {
+  background-color: #fcf9f9;
+  margin-top: auto;
+  padding: 3rem 1rem;
+}
