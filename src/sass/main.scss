@@ -1,3 +1,13 @@
+:root {
+  --ff-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  --ff-serif: Georgia, Iowan Old Style, Apple Garamond, Baskerville,
+    Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --ff-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
+
 @import "reset";
 
 html {
@@ -12,7 +22,7 @@ body {
 }
 .wrapper {
   width: 90%;
-  max-width: 65ch;
+  max-width: 80ch;
   margin-inline: auto;
 }
 .grid {
@@ -25,11 +35,24 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: var(--ff-sans-serif);
 }
 .main-nav {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.main-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.8125rem;
+  transition: color 0.3s ease-in-out;
+}
+.main-nav a:hover {
+  color: red;
 }
 main {
   margin: 0 auto;
