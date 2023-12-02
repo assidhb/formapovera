@@ -1,0 +1,28 @@
+<header>
+  <div class="logo">
+    {# <a href="/">{{ site.siteName }}</a> #}
+    <a href="/">
+      <img
+        src="/img/logo_formapovera.svg"
+        alt="logo forma povera"
+        height="16"
+      />
+    </a>
+  </div>
+  <button
+    class="mobile-nav-toggle"
+    aria-controls="main-nav"
+    aria-expanded="false"
+  >
+    <span class="visually-hidden">Menu</span>
+  </button>
+  <nav>
+    <ul id="main-nav" class="main-nav" role="list" data-visible="false">
+      {% for nav in navigation %}
+      <li class="nav-item">
+        <a href="{{ nav.url }}">{{ nav.text }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
